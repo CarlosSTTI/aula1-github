@@ -1,0 +1,29 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Listas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<String> list = new ArrayList<>();
+		
+		list.add("Maria");
+		list.add("Alex");
+		list.add("Bob");
+		list.add("Anna");
+		list.add(3, "Marco");
+
+		System.out.println(list.size());
+		
+		list.remove("Anna");
+		
+		for (String y : list) {
+			System.out.println(y);
+		}
+	}
+
+
+}

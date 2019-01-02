@@ -1,0 +1,15 @@
+package application;
+
+public class Matrizes8 {
+
+	public static void main(String[] args) {
+		
+		double [][] notas = new double [3][4];
+		
+		notas [0][0] = 10;
+		notas [0][1] = 5;
+		
+		System.out.println(notas);
+	}
+
+}

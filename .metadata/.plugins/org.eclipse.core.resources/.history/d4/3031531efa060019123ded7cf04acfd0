@@ -1,0 +1,15 @@
+package application;
+
+public class Tentando2 {
+
+	public static void main(String[] args) {
+
+		int i;
+		int [] x = new int [5];
+		
+		for (i =0; i<5; i++) {
+			System.out.println([i]);
+		}
+	}
+
+}

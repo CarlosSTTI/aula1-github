@@ -1,0 +1,26 @@
+package application;
+
+import java.util.Scanner;
+
+public class Matrizes2 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+			double [] vetorzao = new double [n];
+			double [] vetorzap = new double [n];
+			
+			for (int i = 0; i<n; i++) {
+				vetorzao[i] = sc.nextDouble();
+				vetorzap[i] = sc.nextDouble();
+				System.out.println(vetorzao[i]);
+			}
+			
+		
+
+
+	}
+
+}

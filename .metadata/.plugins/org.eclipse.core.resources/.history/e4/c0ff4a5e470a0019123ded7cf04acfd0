@@ -1,0 +1,19 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Listas {
+
+	public static void main(String[] args) {
+		
+		List <Double> list = new ArrayList<>();
+		
+		double fodase = 10;
+		
+		list.add(fodase);
+		System.out.println(list);
+
+	}
+
+}

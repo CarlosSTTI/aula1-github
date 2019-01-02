@@ -1,0 +1,33 @@
+package entities;
+
+public class User {
+
+	public String nome;
+	public int numero;
+	public double deposito;
+	public double deposito2;
+	public double deposito3;
+	
+	public User () {
+		
+	}
+	
+	public User (String nome, int numero, double deposito, double deposito2, double deposito3) {
+		this.nome = nome;
+		this.numero = numero;
+		this.deposito = deposito;
+		this.deposito2 = deposito2;
+		this.deposito3 = deposito3;
+	}
+	public String toString () {
+		return numero + nome + deposito;
+	}
+	
+	public double Retirada () {
+		return deposito2 - deposito3;
+	}
+	
+	public double Adicionar () {
+		return deposito + deposito2;
+	}
+}

@@ -1,0 +1,26 @@
+package application;
+
+import java.util.Scanner;
+
+import util.Conversao;
+
+public class Dolar {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		Conversao conversao = new Conversao ();
+		
+		System.out.print("Qual o valor do dólar atual?");
+		conversao.dolar = sc.nextDouble();
+		System.out.println("Quantos dólares vão ser comprados?");
+		conversao.valorapagar = sc.nextDouble();
+		System.out.println("Valor pago em reais " + conversao.Conta());
+		
+		sc.close();
+		
+
+	}
+
+}

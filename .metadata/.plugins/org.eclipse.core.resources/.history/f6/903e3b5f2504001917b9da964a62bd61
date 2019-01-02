@@ -1,0 +1,46 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Account;
+
+public class Bancos {
+
+	public static void main(String[] args) {
+		
+		Account account;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter account number: ");
+		int accountNumber = sc.nextInt();
+		System.out.println("Enter account holder: ");
+		sc.nextLine();
+		String holder = sc.nextLine();
+		System.out.println("Is there na initial deposit (y/n)");
+		char decisao = sc.next().charAt(0);
+		if (decisao == 'y') {
+			System.out.println("Enter initial deposit value: ");
+			double initialDeposit = sc.nextDouble();
+			account = new Account(holder, accountNumber, initialDeposit);
+		}
+		else {
+			account = new Account (holder, accountNumber);
+			System.out.println("");
+			System.out.println("Account data: ");
+			System.out.println(account);
+			System.out.println("Enter a deposit value ");
+			double depositvalue = sc.nextDouble();
+			account.deposit(depositvalue);
+			System.out.println("Updted account data ");
+			System.out.println(account);
+			System.out.println("Enter a withdraw value: ");
+			double withdrawvalue = sc.nextDouble();
+			account.withdraw(withdrawvalue);
+			System.out.println(account);
+			
+			
+			
+		}
+
+	}
+
+}

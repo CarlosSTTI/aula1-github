@@ -1,0 +1,24 @@
+package application;
+
+public class Matrizes8 {
+
+	public static void main(String[] args) {
+		
+		double [][] notas = new double [3][4];
+		
+		notas [0][0] = 10;
+		notas [0][1] = 5.5;
+		notas [0][2] = 9.2;
+		notas [0][3] = 3.5;
+		
+		for (int i=0; i<notas.length; i++) {
+			for (int j=0; j<notas.length; j++) {
+				System.out.println(notas[i][j]);
+			}
+		}
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package application;
+
+import java.util.Scanner;
+
+public class Vetores2 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Quantos produtos? ");
+		int n = sc.nextInt();
+		double [] vetor = new double[n];
+		for (int i=0; i<=n; i++) {
+			vetor [i] = sc.nextLine(n);
+		}
+
+		double media = 0.0;
+				for (int i=0; i<=n; i++) {
+					media+=vetor[i];
+				}
+				double avg = media / n;
+	}
+
+}

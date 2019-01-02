@@ -1,0 +1,13 @@
+package util;
+
+public class Conversao {
+
+	public double dolar;
+	public double valorapagar;
+	public double porcentagem = 6;
+
+	public double Conta () {
+		
+	return dolar+valorapagar;
+	}	
+}

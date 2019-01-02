@@ -1,0 +1,26 @@
+package util;
+
+public class Bancos {
+
+	public int numero;
+	public String nome;
+	private double valorzao;
+	
+	public Bancos () {
+		
+	}
+	
+	public Bancos (int numero, String nome) {
+		this.numero = numero;
+		this.nome = nome;
+		
+	}
+
+	
+
+	public double getValorzao() {
+		return valorzao;
+	}
+
+	
+}
